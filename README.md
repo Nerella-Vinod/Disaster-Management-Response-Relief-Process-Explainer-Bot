@@ -1,8 +1,11 @@
 # Disaster Management Response & Relief Explainer Bot
 
+
 ## Overview
 A Generative AI chatbot that explains disaster response procedures, evacuation processes, and relief workflows.
 The system is informational-only and follows responsible GenAI principles.
+
+![Alt text](Screenshot_29-12-2025_123357_localhost.jpeg)
 
 ## Features
 - Explains disaster response stages
