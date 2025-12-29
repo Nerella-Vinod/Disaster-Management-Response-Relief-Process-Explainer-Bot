@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import streamlit as st
 import google.generativeai as genai
 
@@ -27,9 +29,9 @@ STRICT RULES:
 If a question is outside scope, reply:
 "I am designed only to explain general disaster response and relief processes for awareness."
 """
-
+load_dotenv()
 #API Configuration
-API_KEY = "AIzaSyCwRZMeeDUA5a6yUIGIIeZSV5fZKh--beg"
+API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel(
